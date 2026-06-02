@@ -53,4 +53,4 @@ async def on_message(message):
         print("---")
         await message.channel.send(response)
 
-client.run(DISCORD_TOKEN)
+client.run(os.getenv('TOKEN'))
